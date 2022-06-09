@@ -44,7 +44,7 @@
     "@googlemaps/markerclusterer": "^2.0.11"
   },
   "peerDependencies": {
-    "vue": "^2.6.14"
+    "vue": "^3.2.33"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
