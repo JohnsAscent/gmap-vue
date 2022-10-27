@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>The mapElement factory | Gmap-vue v3.5.4</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Documentation for gmap-vue plugin">
+    
+    <link rel="preload" href="/gmap-vue/assets/css/0.styles.95f06aa3.css" as="style"><link rel="preload" href="/gmap-vue/assets/js/app.5eaeb8fa.js" as="script"><link rel="preload" href="/gmap-vue/assets/js/3.164946dc.js" as="script"><link rel="preload" href="/gmap-vue/assets/js/74.76f60041.js" as="script"><link rel="prefetch" href="/gmap-vue/assets/js/1.9064733d.js"><link rel="prefetch" href="/gmap-vue/assets/js/10.bd658964.js"><link rel="prefetch" href="/gmap-vue/assets/js/11.ea8d4f44.js"><link rel="prefetch" href="/gmap-vue/assets/js/12.2ea3dd70.js"><link rel="prefetch" href="/gmap-vue/assets/js/13.25c77367.js"><link rel="prefetch" href="/gmap-vue/assets/js/14.dc893e85.js"><link rel="prefetch" href="/gmap-vue/assets/js/15.df120351.js"><link rel="prefetch" href="/gmap-vue/assets/js/16.86a8421b.js"><link rel="prefetch" href="/gmap-vue/assets/js/17.0fc572a8.js"><link rel="prefetch" href="/gmap-vue/assets/js/18.e998dccf.js"><link rel="prefetch" href="/gmap-vue/assets/js/19.99599614.js"><link rel="prefetch" href="/gmap-vue/assets/js/20.73a0e9fa.js"><link rel="prefetch" href="/gmap-vue/assets/js/21.5ca91666.js"><link rel="prefetch" href="/gmap-vue/assets/js/22.33822e62.js"><link rel="prefetch" href="/gmap-vue/assets/js/23.42f391ac.js"><link rel="prefetch" href="/gmap-vue/assets/js/24.21eb310b.js"><link rel="prefetch" href="/gmap-vue/assets/js/25.e0041ac2.js"><link rel="prefetch" href="/gmap-vue/assets/js/26.ac7eb996.js"><link rel="prefetch" href="/gmap-vue/assets/js/27.86a94b91.js"><link rel="prefetch" href="/gmap-vue/assets/js/28.c033df97.js"><link rel="prefetch" href="/gmap-vue/assets/js/29.d96f4156.js"><link rel="prefetch" href="/gmap-vue/assets/js/30.460c4a58.js"><link rel="prefetch" href="/gmap-vue/assets/js/31.f1d77e76.js"><link rel="prefetch" href="/gmap-vue/assets/js/32.07749355.js"><link rel="prefetch" href="/gmap-vue/assets/js/33.c4623b78.js"><link rel="prefetch" href="/gmap-vue/assets/js/34.80edb87e.js"><link rel="prefetch" href="/gmap-vue/assets/js/35.ace4dc4d.js"><link rel="prefetch" href="/gmap-vue/assets/js/36.1299e8d9.js"><link rel="prefetch" href="/gmap-vue/assets/js/37.dce92cd9.js"><link rel="prefetch" href="/gmap-vue/assets/js/38.fb6fd415.js"><link rel="prefetch" href="/gmap-vue/assets/js/39.9ebb4e1d.js"><link rel="prefetch" href="/gmap-vue/assets/js/4.65a7e0ab.js"><link rel="prefetch" href="/gmap-vue/assets/js/40.d0f63182.js"><link rel="prefetch" href="/gmap-vue/assets/js/41.89368900.js"><link rel="prefetch" href="/gmap-vue/assets/js/42.c001aefd.js"><link rel="prefetch" href="/gmap-vue/assets/js/43.87aa8152.js"><link rel="prefetch" href="/gmap-vue/assets/js/44.3086f9e9.js"><link rel="prefetch" href="/gmap-vue/assets/js/45.630073f2.js"><link rel="prefetch" href="/gmap-vue/assets/js/46.e6c1e872.js"><link rel="prefetch" href="/gmap-vue/assets/js/47.09869e77.js"><link rel="prefetch" href="/gmap-vue/assets/js/48.2f18ec1d.js"><link rel="prefetch" href="/gmap-vue/assets/js/49.04d4c49f.js"><link rel="prefetch" href="/gmap-vue/assets/js/5.54ad93e8.js"><link rel="prefetch" href="/gmap-vue/assets/js/50.c95bbaf8.js"><link rel="prefetch" href="/gmap-vue/assets/js/51.54e8874f.js"><link rel="prefetch" href="/gmap-vue/assets/js/52.30640861.js"><link rel="prefetch" href="/gmap-vue/assets/js/53.2eb150a9.js"><link rel="prefetch" href="/gmap-vue/assets/js/54.203b3b7e.js"><link rel="prefetch" href="/gmap-vue/assets/js/55.9c915b6e.js"><link rel="prefetch" href="/gmap-vue/assets/js/56.a72705ae.js"><link rel="prefetch" href="/gmap-vue/assets/js/57.2d87f49d.js"><link rel="prefetch" href="/gmap-vue/assets/js/58.8b75509a.js"><link rel="prefetch" href="/gmap-vue/assets/js/59.37535892.js"><link rel="prefetch" href="/gmap-vue/assets/js/6.5f2c13f8.js"><link rel="prefetch" href="/gmap-vue/assets/js/60.c78ab060.js"><link rel="prefetch" href="/gmap-vue/assets/js/61.a36f501e.js"><link rel="prefetch" href="/gmap-vue/assets/js/62.cdcea068.js"><link rel="prefetch" href="/gmap-vue/assets/js/63.21c73fa6.js"><link rel="prefetch" href="/gmap-vue/assets/js/64.08326762.js"><link rel="prefetch" href="/gmap-vue/assets/js/65.045545b2.js"><link rel="prefetch" href="/gmap-vue/assets/js/66.e153febb.js"><link rel="prefetch" href="/gmap-vue/assets/js/67.9caef0c3.js"><link rel="prefetch" href="/gmap-vue/assets/js/68.7b0a7df0.js"><link rel="prefetch" href="/gmap-vue/assets/js/69.8733891d.js"><link rel="prefetch" href="/gmap-vue/assets/js/7.630d1267.js"><link rel="prefetch" href="/gmap-vue/assets/js/70.3112b82a.js"><link rel="prefetch" href="/gmap-vue/assets/js/71.57f7951c.js"><link rel="prefetch" href="/gmap-vue/assets/js/72.684b446d.js"><link rel="prefetch" href="/gmap-vue/assets/js/73.fe5f0eb2.js"><link rel="prefetch" href="/gmap-vue/assets/js/75.487dc422.js"><link rel="prefetch" href="/gmap-vue/assets/js/76.bacfe352.js"><link rel="prefetch" href="/gmap-vue/assets/js/77.3d587b78.js"><link rel="prefetch" href="/gmap-vue/assets/js/78.c04f121f.js"><link rel="prefetch" href="/gmap-vue/assets/js/79.f71f2740.js"><link rel="prefetch" href="/gmap-vue/assets/js/8.a9d89974.js"><link rel="prefetch" href="/gmap-vue/assets/js/80.1c7f44c4.js"><link rel="prefetch" href="/gmap-vue/assets/js/81.8894e275.js"><link rel="prefetch" href="/gmap-vue/assets/js/82.15d654c7.js"><link rel="prefetch" href="/gmap-vue/assets/js/9.c79e2c96.js">
+    <link rel="stylesheet" href="/gmap-vue/assets/css/0.styles.95f06aa3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/gmap-vue/" class="home-link router-link-active"><!----> <span class="site-name">Gmap-vue v3.5.4</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/gmap-vue/" class="nav-link">
+  Plugin
+</a></div><div class="nav-item"><a href="/gmap-vue/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/gmap-vue/code/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/gmap-vue/developers/" class="nav-link">
+  Developers
+</a></div><div class="nav-item"><a href="/gmap-vue/changelog/changelog.html" class="nav-link">
+  CHANGELOG
+</a></div><div class="nav-item"><a href="https://github.com/diegoazh/gmap-vue" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/gmap-vue/" class="nav-link">
+  Plugin
+</a></div><div class="nav-item"><a href="/gmap-vue/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/gmap-vue/code/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/gmap-vue/developers/" class="nav-link">
+  Developers
+</a></div><div class="nav-item"><a href="/gmap-vue/changelog/changelog.html" class="nav-link">
+  CHANGELOG
+</a></div><div class="nav-item"><a href="https://github.com/diegoazh/gmap-vue" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/gmap-vue/guide/" aria-current="page" class="sidebar-link">Concepts</a></li><li><section class="sidebar-group is-sub-group depth-1"><a href="/gmap-vue/guide/map" class="sidebar-heading clickable"><span>Components</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/gmap-vue/guide/map.html" class="sidebar-link">GmapMap</a></li><li><a href="/gmap-vue/guide/autocomplete.html" class="sidebar-link">GmapAutocomplete</a></li><li><a href="/gmap-vue/guide/circle.html" class="sidebar-link">GmapCircle</a></li><li><a href="/gmap-vue/guide/cluster.html" class="sidebar-link">GmapCluster</a></li><li><a href="/gmap-vue/guide/drawing-manager.html" class="sidebar-link">GmapDrawingManager</a></li><li><a href="/gmap-vue/guide/heatmap-layer.html" class="sidebar-link">GmapHeatmapLayer</a></li><li><a href="/gmap-vue/guide/info-window.html" class="sidebar-link">GmapInfoWindow</a></li><li><a href="/gmap-vue/guide/kml-layer.html" class="sidebar-link">GmapKmlLayer</a></li><li><a href="/gmap-vue/guide/marker.html" class="sidebar-link">GmapMarker</a></li><li><a href="/gmap-vue/guide/place-input.html" class="sidebar-link">GmapPlaceInput</a></li><li><a href="/gmap-vue/guide/polygon.html" class="sidebar-link">GmapPolygon</a></li><li><a href="/gmap-vue/guide/polyline.html" class="sidebar-link">GmapPolyline</a></li><li><a href="/gmap-vue/guide/rectangle.html" class="sidebar-link">GmapRectangle</a></li><li><a href="/gmap-vue/guide/street-view-panorama.html" class="sidebar-link">GmapStreetViewPanorama</a></li><li><a href="/gmap-vue/guide/extra-examples.html" class="sidebar-link">Extra examples</a></li><li><a href="/gmap-vue/guide/cdn.html" class="sidebar-link">Using a CDN</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><a href="/gmap-vue/guide/map-element-factory" class="sidebar-heading clickable open active"><span>Factories</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/gmap-vue/guide/map-element-factory.html" aria-current="page" class="active sidebar-link">mapElement factory</a></li><li><a href="/gmap-vue/guide/promise-lazy-factory.html" class="sidebar-link">promiseLazy factory</a></li></ul></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="the-mapelement-factory"><a href="#the-mapelement-factory" class="header-anchor">#</a> The mapElement factory</h1> <p>The current code of the <code>mapElement</code> factory function.</p> <p>You can find the API documentation <a href="/gmap-vue/code/utils/factories/map-element.html">here</a>.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> MapElementMixin <span class="token keyword">from</span> <span class="token string">'../../mixins/map-element'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+  bindEvents<span class="token punctuation">,</span>
+  bindProps<span class="token punctuation">,</span>
+  getPropsValues<span class="token punctuation">,</span>
+  mappedPropsToVueProps<span class="token punctuation">,</span>
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../helpers'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">_assert</span><span class="token punctuation">(</span><span class="token parameter">v<span class="token punctuation">,</span> message</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>v<span class="token punctuation">)</span> <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">mapElement</span><span class="token punctuation">(</span><span class="token parameter">providedOptions</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span>
+    mappedProps<span class="token punctuation">,</span>
+    name<span class="token punctuation">,</span>
+    ctr<span class="token punctuation">,</span>
+    ctrArgs<span class="token punctuation">,</span>
+    events<span class="token punctuation">,</span>
+    beforeCreate<span class="token punctuation">,</span>
+    afterCreate<span class="token punctuation">,</span>
+    props<span class="token punctuation">,</span>
+    <span class="token operator">...</span>rest
+  <span class="token punctuation">}</span> <span class="token operator">=</span> providedOptions<span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> promiseName <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">$</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">Promise</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> instanceName <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">$</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">Object</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+
+  <span class="token function">_assert</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span>props <span class="token keyword">instanceof</span> <span class="token class-name">Array</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'`props` should be an object, not Array'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> <span class="token constant">GENERATE_DOC</span> <span class="token operator">!==</span> <span class="token string">'undefined'</span>
+      <span class="token operator">?</span> <span class="token punctuation">{</span> <span class="token literal-property property">$vgmOptions</span><span class="token operator">:</span> providedOptions <span class="token punctuation">}</span>
+      <span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">mixins</span><span class="token operator">:</span> <span class="token punctuation">[</span>MapElementMixin<span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token operator">...</span>props<span class="token punctuation">,</span>
+      <span class="token operator">...</span><span class="token function">mappedPropsToVueProps</span><span class="token punctuation">(</span>mappedProps<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token string">''</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">provide</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> promise <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$mapPromise
+        <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">map</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token comment">// Infowindow needs this to be immediately available</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>$map <span class="token operator">=</span> map<span class="token punctuation">;</span>
+
+          <span class="token comment">// Initialize the maps with the given options</span>
+          <span class="token keyword">const</span> initialOptions <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token operator">...</span><span class="token keyword">this</span><span class="token punctuation">.</span>options<span class="token punctuation">,</span>
+            map<span class="token punctuation">,</span>
+            <span class="token operator">...</span><span class="token function">getPropsValues</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> mappedProps<span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">;</span>
+          <span class="token comment">// don't use delete keyword in order to create a more predictable code for the engine</span>
+          <span class="token keyword">const</span> <span class="token punctuation">{</span> <span class="token literal-property property">options</span><span class="token operator">:</span> extraOptions<span class="token punctuation">,</span> <span class="token operator">...</span>finalOptions <span class="token punctuation">}</span> <span class="token operator">=</span> initialOptions<span class="token punctuation">;</span> <span class="token comment">// delete the extra options</span>
+          <span class="token keyword">const</span> options <span class="token operator">=</span> finalOptions<span class="token punctuation">;</span>
+
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>beforeCreate<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token function">beforeCreate</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>result <span class="token keyword">instanceof</span> <span class="token class-name">Promise</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">return</span> result<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> options <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+          <span class="token keyword">return</span> <span class="token punctuation">{</span> options <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> options <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">const</span> ConstructorObject <span class="token operator">=</span> <span class="token function">ctr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token comment">// https://stackoverflow.com/questions/1606797/use-of-apply-with-new-operator-is-this-possible</span>
+          <span class="token keyword">this</span><span class="token punctuation">[</span>instanceName<span class="token punctuation">]</span> <span class="token operator">=</span> ctrArgs
+            <span class="token operator">?</span> <span class="token keyword">new</span> <span class="token punctuation">(</span><span class="token class-name">Function</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>
+                ConstructorObject<span class="token punctuation">,</span>
+                <span class="token keyword">null</span><span class="token punctuation">,</span>
+                <span class="token operator">...</span><span class="token function">ctrArgs</span><span class="token punctuation">(</span>options<span class="token punctuation">,</span> <span class="token function">getPropsValues</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> props <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+              <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">ConstructorObject</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+          <span class="token function">bindProps</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">[</span>instanceName<span class="token punctuation">]</span><span class="token punctuation">,</span> mappedProps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token function">bindEvents</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">[</span>instanceName<span class="token punctuation">]</span><span class="token punctuation">,</span> events<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>afterCreate<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">afterCreate</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">[</span>instanceName<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+          <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">[</span>instanceName<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">this</span><span class="token punctuation">[</span>promiseName<span class="token punctuation">]</span> <span class="token operator">=</span> promise<span class="token punctuation">;</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token punctuation">[</span>promiseName<span class="token punctuation">]</span><span class="token operator">:</span> promise <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">destroyed</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// Note: not all Google Maps components support maps</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">[</span>instanceName<span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">[</span>instanceName<span class="token punctuation">]</span><span class="token punctuation">.</span>setMap<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">[</span>instanceName<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">setMap</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token operator">...</span>rest<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> mapElement<span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/gmap-vue/guide/cdn.html" class="prev">
+        Using a CDN
+      </a></span> <span class="next"><a href="/gmap-vue/guide/promise-lazy-factory.html">
+        promiseLazy factory
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/gmap-vue/assets/js/app.5eaeb8fa.js" defer></script><script src="/gmap-vue/assets/js/3.164946dc.js" defer></script><script src="/gmap-vue/assets/js/74.76f60041.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Description | Gmap-vue v3.5.4</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Documentation for gmap-vue plugin">
+    
+    <link rel="preload" href="/gmap-vue/assets/css/0.styles.95f06aa3.css" as="style"><link rel="preload" href="/gmap-vue/assets/js/app.5eaeb8fa.js" as="script"><link rel="preload" href="/gmap-vue/assets/js/3.164946dc.js" as="script"><link rel="preload" href="/gmap-vue/assets/js/69.8733891d.js" as="script"><link rel="preload" href="/gmap-vue/assets/js/14.dc893e85.js" as="script"><link rel="preload" href="/gmap-vue/assets/js/35.ace4dc4d.js" as="script"><link rel="prefetch" href="/gmap-vue/assets/js/1.9064733d.js"><link rel="prefetch" href="/gmap-vue/assets/js/10.bd658964.js"><link rel="prefetch" href="/gmap-vue/assets/js/11.ea8d4f44.js"><link rel="prefetch" href="/gmap-vue/assets/js/12.2ea3dd70.js"><link rel="prefetch" href="/gmap-vue/assets/js/13.25c77367.js"><link rel="prefetch" href="/gmap-vue/assets/js/15.df120351.js"><link rel="prefetch" href="/gmap-vue/assets/js/16.86a8421b.js"><link rel="prefetch" href="/gmap-vue/assets/js/17.0fc572a8.js"><link rel="prefetch" href="/gmap-vue/assets/js/18.e998dccf.js"><link rel="prefetch" href="/gmap-vue/assets/js/19.99599614.js"><link rel="prefetch" href="/gmap-vue/assets/js/20.73a0e9fa.js"><link rel="prefetch" href="/gmap-vue/assets/js/21.5ca91666.js"><link rel="prefetch" href="/gmap-vue/assets/js/22.33822e62.js"><link rel="prefetch" href="/gmap-vue/assets/js/23.42f391ac.js"><link rel="prefetch" href="/gmap-vue/assets/js/24.21eb310b.js"><link rel="prefetch" href="/gmap-vue/assets/js/25.e0041ac2.js"><link rel="prefetch" href="/gmap-vue/assets/js/26.ac7eb996.js"><link rel="prefetch" href="/gmap-vue/assets/js/27.86a94b91.js"><link rel="prefetch" href="/gmap-vue/assets/js/28.c033df97.js"><link rel="prefetch" href="/gmap-vue/assets/js/29.d96f4156.js"><link rel="prefetch" href="/gmap-vue/assets/js/30.460c4a58.js"><link rel="prefetch" href="/gmap-vue/assets/js/31.f1d77e76.js"><link rel="prefetch" href="/gmap-vue/assets/js/32.07749355.js"><link rel="prefetch" href="/gmap-vue/assets/js/33.c4623b78.js"><link rel="prefetch" href="/gmap-vue/assets/js/34.80edb87e.js"><link rel="prefetch" href="/gmap-vue/assets/js/36.1299e8d9.js"><link rel="prefetch" href="/gmap-vue/assets/js/37.dce92cd9.js"><link rel="prefetch" href="/gmap-vue/assets/js/38.fb6fd415.js"><link rel="prefetch" href="/gmap-vue/assets/js/39.9ebb4e1d.js"><link rel="prefetch" href="/gmap-vue/assets/js/4.65a7e0ab.js"><link rel="prefetch" href="/gmap-vue/assets/js/40.d0f63182.js"><link rel="prefetch" href="/gmap-vue/assets/js/41.89368900.js"><link rel="prefetch" href="/gmap-vue/assets/js/42.c001aefd.js"><link rel="prefetch" href="/gmap-vue/assets/js/43.87aa8152.js"><link rel="prefetch" href="/gmap-vue/assets/js/44.3086f9e9.js"><link rel="prefetch" href="/gmap-vue/assets/js/45.630073f2.js"><link rel="prefetch" href="/gmap-vue/assets/js/46.e6c1e872.js"><link rel="prefetch" href="/gmap-vue/assets/js/47.09869e77.js"><link rel="prefetch" href="/gmap-vue/assets/js/48.2f18ec1d.js"><link rel="prefetch" href="/gmap-vue/assets/js/49.04d4c49f.js"><link rel="prefetch" href="/gmap-vue/assets/js/5.54ad93e8.js"><link rel="prefetch" href="/gmap-vue/assets/js/50.c95bbaf8.js"><link rel="prefetch" href="/gmap-vue/assets/js/51.54e8874f.js"><link rel="prefetch" href="/gmap-vue/assets/js/52.30640861.js"><link rel="prefetch" href="/gmap-vue/assets/js/53.2eb150a9.js"><link rel="prefetch" href="/gmap-vue/assets/js/54.203b3b7e.js"><link rel="prefetch" href="/gmap-vue/assets/js/55.9c915b6e.js"><link rel="prefetch" href="/gmap-vue/assets/js/56.a72705ae.js"><link rel="prefetch" href="/gmap-vue/assets/js/57.2d87f49d.js"><link rel="prefetch" href="/gmap-vue/assets/js/58.8b75509a.js"><link rel="prefetch" href="/gmap-vue/assets/js/59.37535892.js"><link rel="prefetch" href="/gmap-vue/assets/js/6.5f2c13f8.js"><link rel="prefetch" href="/gmap-vue/assets/js/60.c78ab060.js"><link rel="prefetch" href="/gmap-vue/assets/js/61.a36f501e.js"><link rel="prefetch" href="/gmap-vue/assets/js/62.cdcea068.js"><link rel="prefetch" href="/gmap-vue/assets/js/63.21c73fa6.js"><link rel="prefetch" href="/gmap-vue/assets/js/64.08326762.js"><link rel="prefetch" href="/gmap-vue/assets/js/65.045545b2.js"><link rel="prefetch" href="/gmap-vue/assets/js/66.e153febb.js"><link rel="prefetch" href="/gmap-vue/assets/js/67.9caef0c3.js"><link rel="prefetch" href="/gmap-vue/assets/js/68.7b0a7df0.js"><link rel="prefetch" href="/gmap-vue/assets/js/7.630d1267.js"><link rel="prefetch" href="/gmap-vue/assets/js/70.3112b82a.js"><link rel="prefetch" href="/gmap-vue/assets/js/71.57f7951c.js"><link rel="prefetch" href="/gmap-vue/assets/js/72.684b446d.js"><link rel="prefetch" href="/gmap-vue/assets/js/73.fe5f0eb2.js"><link rel="prefetch" href="/gmap-vue/assets/js/74.76f60041.js"><link rel="prefetch" href="/gmap-vue/assets/js/75.487dc422.js"><link rel="prefetch" href="/gmap-vue/assets/js/76.bacfe352.js"><link rel="prefetch" href="/gmap-vue/assets/js/77.3d587b78.js"><link rel="prefetch" href="/gmap-vue/assets/js/78.c04f121f.js"><link rel="prefetch" href="/gmap-vue/assets/js/79.f71f2740.js"><link rel="prefetch" href="/gmap-vue/assets/js/8.a9d89974.js"><link rel="prefetch" href="/gmap-vue/assets/js/80.1c7f44c4.js"><link rel="prefetch" href="/gmap-vue/assets/js/81.8894e275.js"><link rel="prefetch" href="/gmap-vue/assets/js/82.15d654c7.js"><link rel="prefetch" href="/gmap-vue/assets/js/9.c79e2c96.js">
+    <link rel="stylesheet" href="/gmap-vue/assets/css/0.styles.95f06aa3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/gmap-vue/" class="home-link router-link-active"><!----> <span class="site-name">Gmap-vue v3.5.4</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/gmap-vue/" class="nav-link">
+  Plugin
+</a></div><div class="nav-item"><a href="/gmap-vue/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/gmap-vue/code/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/gmap-vue/developers/" class="nav-link">
+  Developers
+</a></div><div class="nav-item"><a href="/gmap-vue/changelog/changelog.html" class="nav-link">
+  CHANGELOG
+</a></div><div class="nav-item"><a href="https://github.com/diegoazh/gmap-vue" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/gmap-vue/" class="nav-link">
+  Plugin
+</a></div><div class="nav-item"><a href="/gmap-vue/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/gmap-vue/code/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/gmap-vue/developers/" class="nav-link">
+  Developers
+</a></div><div class="nav-item"><a href="/gmap-vue/changelog/changelog.html" class="nav-link">
+  CHANGELOG
+</a></div><div class="nav-item"><a href="https://github.com/diegoazh/gmap-vue" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/gmap-vue/guide/" aria-current="page" class="sidebar-link">Concepts</a></li><li><section class="sidebar-group is-sub-group depth-1"><a href="/gmap-vue/guide/map" class="sidebar-heading clickable open"><span>Components</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/gmap-vue/guide/map.html" class="sidebar-link">GmapMap</a></li><li><a href="/gmap-vue/guide/autocomplete.html" class="sidebar-link">GmapAutocomplete</a></li><li><a href="/gmap-vue/guide/circle.html" class="sidebar-link">GmapCircle</a></li><li><a href="/gmap-vue/guide/cluster.html" class="sidebar-link">GmapCluster</a></li><li><a href="/gmap-vue/guide/drawing-manager.html" aria-current="page" class="active sidebar-link">GmapDrawingManager</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/gmap-vue/guide/drawing-manager.html#description" class="sidebar-link">Description</a></li><li class="sidebar-sub-header"><a href="/gmap-vue/guide/drawing-manager.html#variables" class="sidebar-link">Variables</a></li><li class="sidebar-sub-header"><a href="/gmap-vue/guide/drawing-manager.html#source-code" class="sidebar-link">Source code</a></li><li class="sidebar-sub-header"><a href="/gmap-vue/guide/drawing-manager.html#how-to-use-it" class="sidebar-link">How to use it</a></li><li class="sidebar-sub-header"><a href="/gmap-vue/guide/drawing-manager.html#html-examples" class="sidebar-link">HTML examples</a></li><li class="sidebar-sub-header"><a href="/gmap-vue/guide/drawing-manager.html#test-the-component" class="sidebar-link">Test the component</a></li></ul></li><li><a href="/gmap-vue/guide/heatmap-layer.html" class="sidebar-link">GmapHeatmapLayer</a></li><li><a href="/gmap-vue/guide/info-window.html" class="sidebar-link">GmapInfoWindow</a></li><li><a href="/gmap-vue/guide/kml-layer.html" class="sidebar-link">GmapKmlLayer</a></li><li><a href="/gmap-vue/guide/marker.html" class="sidebar-link">GmapMarker</a></li><li><a href="/gmap-vue/guide/place-input.html" class="sidebar-link">GmapPlaceInput</a></li><li><a href="/gmap-vue/guide/polygon.html" class="sidebar-link">GmapPolygon</a></li><li><a href="/gmap-vue/guide/polyline.html" class="sidebar-link">GmapPolyline</a></li><li><a href="/gmap-vue/guide/rectangle.html" class="sidebar-link">GmapRectangle</a></li><li><a href="/gmap-vue/guide/street-view-panorama.html" class="sidebar-link">GmapStreetViewPanorama</a></li><li><a href="/gmap-vue/guide/extra-examples.html" class="sidebar-link">Extra examples</a></li><li><a href="/gmap-vue/guide/cdn.html" class="sidebar-link">Using a CDN</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><a href="/gmap-vue/guide/map-element-factory" class="sidebar-heading clickable"><span>Factories</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/gmap-vue/guide/map-element-factory.html" class="sidebar-link">mapElement factory</a></li><li><a href="/gmap-vue/guide/promise-lazy-factory.html" class="sidebar-link">promiseLazy factory</a></li></ul></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="description"><a href="#description" class="header-anchor">#</a> Description</h2> <p>This component helps you to drawing shapes on over the map.</p> <p>For more information read the Google Maps documentation for <a href="https://developers.google.com/maps/documentation/javascript/drawinglayer" target="_blank" rel="noopener noreferrer">drawing manager<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <p>It is exported with the name <code>GmapDrawingManager</code>.</p> <h2 id="variables"><a href="#variables" class="header-anchor">#</a> Variables</h2> <p>This component save the original drawing manager object provided by Google Maps in a property called <code>$drawingManagerObject</code>, as the example below.</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>drawing<span class="token punctuation">.</span>DrawingManager</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="source-code"><a href="#source-code" class="header-anchor">#</a> Source code</h2> <details class="custom-block details"><summary>Click to se the source code of <code>drawing-manager.vue</code> component</summary> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span>
+      <span class="token attr-name"><span class="token namespace">v-bind:</span>setDrawingMode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>setDrawingMode<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name"><span class="token namespace">v-bind:</span>deleteSelection</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>deleteSelection<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> MapElementMixin <span class="token keyword">from</span> <span class="token string">'../mixins/map-element'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> drawingManagerMappedProps <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../utils/mapped-props-by-map-element'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> bindProps<span class="token punctuation">,</span> getPropsValues <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../utils/helpers'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">mixins</span><span class="token operator">:</span> <span class="token punctuation">[</span>MapElementMixin<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">circleOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> Object<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">markerOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> Object<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">polygonOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> Object<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">polylineOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> Object<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">rectangleOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> Object<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">position</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">shapes</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> Array<span class="token punctuation">,</span>
+      <span class="token literal-property property">required</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">selectedShape</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">drawingModes</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">drawingMode</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">drawingControl</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">drawingControlOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">setDrawingMode</span><span class="token punctuation">(</span><span class="token parameter">mode</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">.</span><span class="token function">setDrawingMode</span><span class="token punctuation">(</span>mode<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">drawAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> shapeType <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">circle</span><span class="token operator">:</span> google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>Circle<span class="token punctuation">,</span>
+        <span class="token literal-property property">marker</span><span class="token operator">:</span> google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>Marker<span class="token punctuation">,</span>
+        <span class="token literal-property property">polygon</span><span class="token operator">:</span> google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>Polygon<span class="token punctuation">,</span>
+        <span class="token literal-property property">polyline</span><span class="token operator">:</span> google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>Polyline<span class="token punctuation">,</span>
+        <span class="token literal-property property">rectangle</span><span class="token operator">:</span> google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>Rectangle<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">const</span> self <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>shapes<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">shape</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> shapeDrawing <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">shapeType</span><span class="token punctuation">[</span>shape<span class="token punctuation">.</span>type<span class="token punctuation">]</span><span class="token punctuation">(</span>shape<span class="token punctuation">.</span>overlay<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        shapeDrawing<span class="token punctuation">.</span><span class="token function">setMap</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$map<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        shape<span class="token punctuation">.</span>overlay <span class="token operator">=</span> shapeDrawing<span class="token punctuation">;</span>
+        google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>event<span class="token punctuation">.</span><span class="token function">addListener</span><span class="token punctuation">(</span>shapeDrawing<span class="token punctuation">,</span> <span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          self<span class="token punctuation">.</span><span class="token function">setSelection</span><span class="token punctuation">(</span>shape<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">clearAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">clearSelection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>shapes<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">shape</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        shape<span class="token punctuation">.</span>overlay<span class="token punctuation">.</span><span class="token function">setMap</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">clearSelection</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>selectedShape<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>selectedShape<span class="token punctuation">.</span>overlay<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'fillColor'</span><span class="token punctuation">,</span> <span class="token string">'#777'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>selectedShape<span class="token punctuation">.</span>overlay<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'strokeColor'</span><span class="token punctuation">,</span> <span class="token string">'#999'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>selectedShape<span class="token punctuation">.</span>overlay<span class="token punctuation">.</span><span class="token function">setEditable</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>selectedShape<span class="token punctuation">.</span>overlay<span class="token punctuation">.</span><span class="token function">setDraggable</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>selectedShape <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">setSelection</span><span class="token punctuation">(</span><span class="token parameter">shape</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">clearSelection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>selectedShape <span class="token operator">=</span> shape<span class="token punctuation">;</span>
+      shape<span class="token punctuation">.</span>overlay<span class="token punctuation">.</span><span class="token function">setEditable</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      shape<span class="token punctuation">.</span>overlay<span class="token punctuation">.</span><span class="token function">setDraggable</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>selectedShape<span class="token punctuation">.</span>overlay<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'fillColor'</span><span class="token punctuation">,</span> <span class="token string">'#555'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>selectedShape<span class="token punctuation">.</span>overlay<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'strokeColor'</span><span class="token punctuation">,</span> <span class="token string">'#777'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">deleteSelection</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>selectedShape<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>selectedShape<span class="token punctuation">.</span>overlay<span class="token punctuation">.</span><span class="token function">setMap</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">const</span> index <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>shapes<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>selectedShape<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">&gt;</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>shapes<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">addShape</span><span class="token punctuation">(</span><span class="token parameter">shape</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setDrawingMode</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>shapes<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>shape<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">const</span> self <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+      google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>event<span class="token punctuation">.</span><span class="token function">addListener</span><span class="token punctuation">(</span>shape<span class="token punctuation">.</span>overlay<span class="token punctuation">,</span> <span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        self<span class="token punctuation">.</span><span class="token function">setSelection</span><span class="token punctuation">(</span>shape<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>event<span class="token punctuation">.</span><span class="token function">addListener</span><span class="token punctuation">(</span>shape<span class="token punctuation">.</span>overlay<span class="token punctuation">,</span> <span class="token string">'rightclick'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        self<span class="token punctuation">.</span><span class="token function">deleteSelection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setSelection</span><span class="token punctuation">(</span>shape<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">position</span><span class="token punctuation">(</span><span class="token parameter">position</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> drawingControlOptions <span class="token operator">=</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">position</span><span class="token operator">:</span>
+            position <span class="token operator">&amp;&amp;</span> google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>ControlPosition<span class="token punctuation">[</span>position<span class="token punctuation">]</span>
+              <span class="token operator">?</span> google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>ControlPosition<span class="token punctuation">[</span>position<span class="token punctuation">]</span>
+              <span class="token operator">:</span> google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>ControlPosition<span class="token punctuation">.</span><span class="token constant">TOP_LEFT</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">drawingModes</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>drawingModes<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">.</span><span class="token function">setOptions</span><span class="token punctuation">(</span><span class="token punctuation">{</span> drawingControlOptions <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">circleOptions</span><span class="token punctuation">(</span><span class="token parameter">circleOptions</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">.</span><span class="token function">setOptions</span><span class="token punctuation">(</span><span class="token punctuation">{</span> circleOptions <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">markerOptions</span><span class="token punctuation">(</span><span class="token parameter">markerOptions</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">.</span><span class="token function">setOptions</span><span class="token punctuation">(</span><span class="token punctuation">{</span> markerOptions <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">polygonOptions</span><span class="token punctuation">(</span><span class="token parameter">polygonOptions</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">.</span><span class="token function">setOptions</span><span class="token punctuation">(</span><span class="token punctuation">{</span> polygonOptions <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">polylineOptions</span><span class="token punctuation">(</span><span class="token parameter">polylineOptions</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">.</span><span class="token function">setOptions</span><span class="token punctuation">(</span><span class="token punctuation">{</span> polylineOptions <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">rectangleOptions</span><span class="token punctuation">(</span><span class="token parameter">rectangleOptions</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">.</span><span class="token function">setOptions</span><span class="token punctuation">(</span><span class="token punctuation">{</span> rectangleOptions <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">provide</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Infowindow needs this to be immediately available</span>
+    <span class="token keyword">const</span> promise <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$mapPromise
+      <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">map</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$map <span class="token operator">=</span> map<span class="token punctuation">;</span>
+
+        <span class="token comment">// Initialize the maps with the given options</span>
+        <span class="token keyword">const</span> initialOptions <span class="token operator">=</span> <span class="token punctuation">{</span>
+          <span class="token operator">...</span><span class="token keyword">this</span><span class="token punctuation">.</span>options<span class="token punctuation">,</span>
+          map<span class="token punctuation">,</span>
+          <span class="token operator">...</span><span class="token function">getPropsValues</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> drawingManagerMappedProps<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">const</span> <span class="token punctuation">{</span> <span class="token literal-property property">options</span><span class="token operator">:</span> extraOptions<span class="token punctuation">,</span> <span class="token operator">...</span>finalOptions <span class="token punctuation">}</span> <span class="token operator">=</span> initialOptions<span class="token punctuation">;</span>
+
+        <span class="token keyword">this</span><span class="token punctuation">.</span>drawingModes <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>finalOptions<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">modes<span class="token punctuation">,</span> opt</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">const</span> val <span class="token operator">=</span> opt<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'Options'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>val<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            modes<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>val<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+
+          <span class="token keyword">return</span> modes<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">const</span> position <span class="token operator">=</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>position <span class="token operator">&amp;&amp;</span> google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>ControlPosition<span class="token punctuation">[</span><span class="token keyword">this</span><span class="token punctuation">.</span>position<span class="token punctuation">]</span>
+            <span class="token operator">?</span> google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>ControlPosition<span class="token punctuation">[</span><span class="token keyword">this</span><span class="token punctuation">.</span>position<span class="token punctuation">]</span>
+            <span class="token operator">:</span> google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>ControlPosition<span class="token punctuation">.</span><span class="token constant">TOP_LEFT</span><span class="token punctuation">;</span>
+
+        finalOptions<span class="token punctuation">.</span>drawingMode <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        finalOptions<span class="token punctuation">.</span>drawingControl <span class="token operator">=</span> <span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>$scopedSlots<span class="token punctuation">.</span>default<span class="token punctuation">;</span>
+        finalOptions<span class="token punctuation">.</span>drawingControlOptions <span class="token operator">=</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">drawingModes</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>drawingModes<span class="token punctuation">,</span>
+          position<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// https://stackoverflow.com/questions/1606797/use-of-apply-with-new-operator-is-this-possible</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>drawing<span class="token punctuation">.</span>DrawingManager</span><span class="token punctuation">(</span>
+          finalOptions
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token function">bindProps</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">,</span> drawingManagerMappedProps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">.</span><span class="token function">addListener</span><span class="token punctuation">(</span><span class="token string">'overlaycomplete'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">addShape</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$map<span class="token punctuation">.</span><span class="token function">addListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>clearSelection<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>shapes<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">drawAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> error<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerPromise <span class="token operator">=</span> promise<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token literal-property property">$drawingManagerPromise</span><span class="token operator">:</span> promise <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">destroyed</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">clearAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// Note: not all Google Maps components support maps</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">.</span>setMap<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$drawingManagerObject<span class="token punctuation">.</span><span class="token function">setMap</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div></details> <p>If you need to know what are <code>mappedProps</code> please read the general concepts of this application <a href="/gmap-vue/code/utils/mapped-props-by-map-element.html#autocompletemappedprops">here</a>.</p> <details class="custom-block details"><summary>Mapped Props of <code>GmapDrawingManager</code> component</summary> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+<span class="token keyword">export</span> <span class="token keyword">const</span> drawingManagerMappedProps <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">circleOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> Object<span class="token punctuation">,</span>
+    <span class="token literal-property property">twoWay</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">noBind</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">markerOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> Object<span class="token punctuation">,</span>
+    <span class="token literal-property property">twoWay</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">noBind</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">polygonOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> Object<span class="token punctuation">,</span>
+    <span class="token literal-property property">twoWay</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">noBind</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">polylineOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> Object<span class="token punctuation">,</span>
+    <span class="token literal-property property">twoWay</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">noBind</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">rectangleOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> Object<span class="token punctuation">,</span>
+    <span class="token literal-property property">twoWay</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">noBind</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div></details> <h2 id="how-to-use-it"><a href="#how-to-use-it" class="header-anchor">#</a> How to use it</h2> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>gmap-map</span>
+    <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mapRef<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:center</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mapCenter<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:zoom</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>7<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">map-type-id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>roadmap<span class="token punctuation">&quot;</span></span>
+    <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <span class="token property">height</span><span class="token punctuation">:</span> 800px</span><span class="token punctuation">&quot;</span></span></span>
+    <span class="token attr-name">:options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{
+        zoomControl: true,
+        mapTypeControl: true,
+        scaleControl: false,
+        streetViewControl: false,
+        rotateControl: false,
+        fullscreenControl: false,
+        disableDefaultUi: false,
+        draggable: mapDraggable,
+        draggableCursor: mapCursor
+      }<span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- use the default slot to pass markers to it --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>gmap-drawing-manager</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>gmap-drawing-manager</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>gmap-map</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>gmap-map</span>
+    <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mapRef<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:center</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mapCenter<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:zoom</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>7<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">map-type-id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>roadmap<span class="token punctuation">&quot;</span></span>
+    <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <span class="token property">height</span><span class="token punctuation">:</span> 800px</span><span class="token punctuation">&quot;</span></span></span>
+    <span class="token attr-name">:options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{
+        zoomControl: true,
+        mapTypeControl: true,
+        scaleControl: false,
+        streetViewControl: false,
+        rotateControl: false,
+        fullscreenControl: false,
+        disableDefaultUi: false,
+        draggable: mapDraggable,
+        draggableCursor: mapCursor
+      }<span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- or with an slot --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>gmap-drawing-manager</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">v-slot</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>on<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>your-toolbar-component</span>
+          <span class="token attr-name">@drawingmode_changed</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>on.setDrawingMode($event)<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">@delete_selection</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>on.deleteSelection()<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">@save</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mapMode='ready'<span class="token punctuation">&quot;</span></span>
+        <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>gmap-drawing-manager</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>gmap-map</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>If you need to know the <strong>API of this component</strong> please read it <a href="/gmap-vue/code/components/drawing-manager.html">here</a>.</p> <h2 id="html-examples"><a href="#html-examples" class="header-anchor">#</a> HTML examples</h2> <details class="custom-block details"><summary>HTML example</summary> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>root<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Drawing Manager Example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span>100%<span class="token punctuation">;</span> <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span> <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span>auto</span><span class="token punctuation">&quot;</span></span></span> <span class="token punctuation">/&gt;</span></span>
+      {{ mapMode }} - {{ toolbarPosition }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span>auto</span><span class="token punctuation">&quot;</span></span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>setPos<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Position<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mapMode='edit'<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Edit<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>gmap-map</span>
+      <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mapRef<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:center</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mapCenter<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:zoom</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>7<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">map-type-id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>roadmap<span class="token punctuation">&quot;</span></span>
+      <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <span class="token property">height</span><span class="token punctuation">:</span> 800px</span><span class="token punctuation">&quot;</span></span></span>
+      <span class="token attr-name">:options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          rotateControl: false,
+          fullscreenControl: false,
+          disableDefaultUi: false,
+          draggable: mapDraggable,
+          draggableCursor: mapCursor
+        }<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#visible</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>gmap-drawing-manager</span>
+          <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mapMode==='edit'<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:position</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>toolbarPosition<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:rectangle-options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>rectangleOptions<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:circle-options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>circleOptions<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:polyline-options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>polylineOptions<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:shapes</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>shapes<span class="token punctuation">&quot;</span></span>
+        <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>gmap-map</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://cdn.jsdelivr.net/npm/gmap-vue@1.2.2/dist/gmap-vue.min.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+    Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>GmapVue<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">load</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">key</span><span class="token operator">:</span> <span class="token string">'AIzaSyDf43lPdwlF98RCBsJOFNKOkoEjkwxb5Sc'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">libraries</span><span class="token operator">:</span> <span class="token string">'places,drawing'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'DOMContentLoaded'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">el</span><span class="token operator">:</span> <span class="token string">'#root'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">mapCenter</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">lat</span><span class="token operator">:</span> <span class="token number">4.5</span><span class="token punctuation">,</span> <span class="token literal-property property">lng</span><span class="token operator">:</span> <span class="token number">99</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">mapMode</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">toolbarPosition</span><span class="token operator">:</span> <span class="token string">'TOP_CENTER'</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">mapDraggable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">mapCursor</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">shapes</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">rectangleOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">fillColor</span><span class="token operator">:</span> <span class="token string">'#777'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">fillOpacity</span><span class="token operator">:</span> <span class="token number">0.4</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">strokeWeight</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">strokeColor</span><span class="token operator">:</span> <span class="token string">'#999'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">draggable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">editable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">clickable</span><span class="token operator">:</span> <span class="token boolean">true</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">circleOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">fillColor</span><span class="token operator">:</span> <span class="token string">'#777'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">fillOpacity</span><span class="token operator">:</span> <span class="token number">0.4</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">strokeWeight</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">strokeColor</span><span class="token operator">:</span> <span class="token string">'#999'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">draggable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">editable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">clickable</span><span class="token operator">:</span> <span class="token boolean">true</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">polylineOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">fillColor</span><span class="token operator">:</span> <span class="token string">'#777'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">fillOpacity</span><span class="token operator">:</span> <span class="token number">0.4</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">strokeWeight</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">strokeColor</span><span class="token operator">:</span> <span class="token string">'#999'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">draggable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">editable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">clickable</span><span class="token operator">:</span> <span class="token boolean">true</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token function">mapMode</span><span class="token punctuation">(</span><span class="token parameter">newMode<span class="token punctuation">,</span> oldMode</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>newMode <span class="token operator">===</span> <span class="token string">'ready'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>oldMode <span class="token operator">===</span> <span class="token string">'edit'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">this</span><span class="token punctuation">.</span>mapDraggable <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+                <span class="token keyword">this</span><span class="token punctuation">.</span>mapCursor <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>newMode <span class="token operator">===</span> <span class="token string">'edit'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">this</span><span class="token punctuation">.</span>mapDraggable <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+              <span class="token keyword">this</span><span class="token punctuation">.</span>mapCursor <span class="token operator">=</span> <span class="token string">'default'</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>mapMode <span class="token operator">=</span> <span class="token string">'ready'</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token function">setPos</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">const</span> posTypes <span class="token operator">=</span> <span class="token punctuation">[</span>
+              <span class="token string">'TOP_CENTER'</span><span class="token punctuation">,</span>
+              <span class="token string">'TOP_LEFT'</span><span class="token punctuation">,</span>
+              <span class="token string">'TOP_RIGHT'</span><span class="token punctuation">,</span>
+              <span class="token string">'LEFT_TOP'</span><span class="token punctuation">,</span>
+              <span class="token string">'RIGHT_TOP'</span><span class="token punctuation">,</span>
+              <span class="token string">'LEFT_CENTER'</span><span class="token punctuation">,</span>
+              <span class="token string">'RIGHT_CENTER'</span><span class="token punctuation">,</span>
+              <span class="token string">'LEFT_BOTTOM'</span><span class="token punctuation">,</span>
+              <span class="token string">'RIGHT_BOTTOM'</span><span class="token punctuation">,</span>
+              <span class="token string">'BOTTOM_CENTER'</span><span class="token punctuation">,</span>
+              <span class="token string">'BOTTOM_LEFT'</span><span class="token punctuation">,</span>
+              <span class="token string">'BOTTOM_RIGHT'</span>
+            <span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">this</span><span class="token punctuation">.</span>toolbarPosition <span class="token operator">=</span>
+              posTypes<span class="token punctuation">[</span>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> posTypes<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></details> <details class="custom-block details"><summary>HML examples with slot</summary> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>root<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Drawing Manager Example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span>100%<span class="token punctuation">;</span> <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span> <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span></span> <span class="token punctuation">/&gt;</span></span>
+      {{ mapMode }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mapMode='edit'<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Edit<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>gmap-map</span>
+      <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mapRef<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:center</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mapCenter<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:zoom</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>7<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">map-type-id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>roadmap<span class="token punctuation">&quot;</span></span>
+      <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <span class="token property">height</span><span class="token punctuation">:</span> 800px<span class="token punctuation">;</span> <span class="token property">display</span><span class="token punctuation">:</span>flex<span class="token punctuation">;</span> <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span> <span class="token property">align-items</span><span class="token punctuation">:</span> flex-start<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span></span>
+      <span class="token attr-name">:options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{
+        zoomControl: true,
+        mapTypeControl: true,
+        scaleControl: false,
+        streetViewControl: false,
+        rotateControl: false,
+        fullscreenControl: false,
+        disableDefaultUi: false,
+        draggable: mapDraggable,
+        draggableCursor: mapCursor
+      }<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#visible</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>gmap-drawing-manager</span>
+          <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mapMode==='edit'<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:rectangle-options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>rectangleOptions<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:circle-options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>circleOptions<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:polyline-options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>polylineOptions<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:polygon-options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>polygonOptions<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:shapes</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>shapes<span class="token punctuation">&quot;</span></span>
+        <span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">v-slot</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>on<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>drawing-toolbar</span>
+              <span class="token attr-name">@drawingmode_changed</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>on.setDrawingMode($event)<span class="token punctuation">&quot;</span></span>
+              <span class="token attr-name">@delete_selection</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>on.deleteSelection()<span class="token punctuation">&quot;</span></span>
+              <span class="token attr-name">@save</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mapMode='ready'<span class="token punctuation">&quot;</span></span>
+            <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>gmap-drawing-manager</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>gmap-map</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://cdn.jsdelivr.net/npm/gmap-vue@1.2.2/dist/gmap-vue.min.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+    <span class="token comment">// Only for example purposes</span>
+    <span class="token comment">// In a real application you would simply create a separate component</span>
+    <span class="token keyword">const</span> toolbarTemplate <span class="token operator">=</span>
+      <span class="token string">'&lt;div style=&quot;background-color: #040404; display: flex; position: absolute; padding: 8px&quot;&gt;'</span> <span class="token operator">+</span>
+      <span class="token string">&quot;  &lt;div&gt;&lt;button @click=\&quot;$emit('drawingmode_changed', 'rectangle')\&quot;&gt;Rectangle&lt;/button&gt;&lt;/div&gt;&quot;</span> <span class="token operator">+</span>
+      <span class="token string">&quot;  &lt;div&gt;&lt;button @click=\&quot;$emit('drawingmode_changed', 'circle')\&quot;&gt;Circle&lt;/button&gt;&lt;/div&gt;&quot;</span> <span class="token operator">+</span>
+      <span class="token string">&quot;  &lt;div&gt;&lt;button @click=\&quot;$emit('drawingmode_changed', 'polyline')\&quot;&gt;Line&lt;/button&gt;&lt;/div&gt;&quot;</span> <span class="token operator">+</span>
+      <span class="token string">&quot;  &lt;div&gt;&lt;button @click=\&quot;$emit('drawingmode_changed', 'polygon')\&quot;&gt;Polygon&lt;/button&gt;&lt;/div&gt;&quot;</span> <span class="token operator">+</span>
+      <span class="token string">&quot;  &lt;div&gt;&lt;button @click=\&quot;$emit('delete_selection')\&quot;&gt;Delete&lt;/button&gt;&lt;/div&gt;&quot;</span> <span class="token operator">+</span>
+      <span class="token string">&quot;  &lt;div&gt;&lt;button @click=\&quot;$emit('save')\&quot;&gt;Save&lt;/button&gt;&lt;/div&gt;&quot;</span> <span class="token operator">+</span>
+      <span class="token string">&quot;&lt;/div&gt;&quot;</span><span class="token punctuation">;</span>
+
+    Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>GmapVue<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">load</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">key</span><span class="token operator">:</span> <span class="token string">'AIzaSyDf43lPdwlF98RCBsJOFNKOkoEjkwxb5Sc'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">libraries</span><span class="token operator">:</span> <span class="token string">'places,drawing'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'DOMContentLoaded'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">el</span><span class="token operator">:</span> <span class="token string">'#root'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">components</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">drawingToolbar</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">template</span><span class="token operator">:</span> toolbarTemplate
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">mapCenter</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">lat</span><span class="token operator">:</span> <span class="token number">4.5</span><span class="token punctuation">,</span> <span class="token literal-property property">lng</span><span class="token operator">:</span> <span class="token number">99</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">mapMode</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">mapDraggable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">mapCursor</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">shapes</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">rectangleOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">fillColor</span><span class="token operator">:</span> <span class="token string">'#777'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">fillOpacity</span><span class="token operator">:</span> <span class="token number">0.4</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">strokeWeight</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">strokeColor</span><span class="token operator">:</span> <span class="token string">'#999'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">draggable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">editable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">clickable</span><span class="token operator">:</span> <span class="token boolean">true</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">circleOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">fillColor</span><span class="token operator">:</span> <span class="token string">'#777'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">fillOpacity</span><span class="token operator">:</span> <span class="token number">0.4</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">strokeWeight</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">strokeColor</span><span class="token operator">:</span> <span class="token string">'#999'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">draggable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">editable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">clickable</span><span class="token operator">:</span> <span class="token boolean">true</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">polylineOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">fillColor</span><span class="token operator">:</span> <span class="token string">'#777'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">fillOpacity</span><span class="token operator">:</span> <span class="token number">0.4</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">strokeWeight</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">strokeColor</span><span class="token operator">:</span> <span class="token string">'#999'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">draggable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">editable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">clickable</span><span class="token operator">:</span> <span class="token boolean">true</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">polygonOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">fillColor</span><span class="token operator">:</span> <span class="token string">'#777'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">fillOpacity</span><span class="token operator">:</span> <span class="token number">0.4</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">strokeWeight</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">strokeColor</span><span class="token operator">:</span> <span class="token string">'#999'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">draggable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">editable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">clickable</span><span class="token operator">:</span> <span class="token boolean">true</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token function">mapMode</span><span class="token punctuation">(</span><span class="token parameter">newMode<span class="token punctuation">,</span> oldMode</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>newMode <span class="token operator">===</span> <span class="token string">'ready'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>oldMode <span class="token operator">===</span> <span class="token string">'edit'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">this</span><span class="token punctuation">.</span>mapDraggable <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+                <span class="token keyword">this</span><span class="token punctuation">.</span>mapCursor <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>newMode <span class="token operator">===</span> <span class="token string">'edit'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">this</span><span class="token punctuation">.</span>mapDraggable <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+              <span class="token keyword">this</span><span class="token punctuation">.</span>mapCursor <span class="token operator">=</span> <span class="token string">'default'</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>mapMode <span class="token operator">=</span> <span class="token string">'ready'</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></details> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>If you are using the runtime-only build the template on <code>toolbarTemplate</code> will not work, instead of that
+you need to pre-compile the templates into render functions, or use the compiler-included build.</p></div> <h2 id="test-the-component"><a href="#test-the-component" class="header-anchor">#</a> Test the component</h2> <details class="custom-block details"><summary>Click to see the HTML example in action</summary> <div><div><div><h3>For live examples set a valid gmap api key</h3> <label for="gmap_key">
+    gmap api key <input type="text" name="gmap_key" id="gmap_key" value=""></label> <br><br> <label for="libraries">
+    libraries <input type="text" name="libraries" id="libraries" value="places"> <br> <small>Eg: places,routes,drawing,visualization depending on your requirements</small></label> <br><br> <button>set gmap key</button> <br><br> <p></p></div></div></div></details> <details class="custom-block details"><summary>Click to see the HTML example with slot in action</summary> <div><div><div><h3>For live examples set a valid gmap api key</h3> <label for="gmap_key">
+    gmap api key <input type="text" name="gmap_key" id="gmap_key" value=""></label> <br><br> <label for="libraries">
+    libraries <input type="text" name="libraries" id="libraries" value="places"> <br> <small>Eg: places,routes,drawing,visualization depending on your requirements</small></label> <br><br> <button>set gmap key</button> <br><br> <p></p></div></div></div></details></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/gmap-vue/guide/cluster.html" class="prev">
+        GmapCluster
+      </a></span> <span class="next"><a href="/gmap-vue/guide/heatmap-layer.html">
+        GmapHeatmapLayer
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/gmap-vue/assets/js/app.5eaeb8fa.js" defer></script><script src="/gmap-vue/assets/js/3.164946dc.js" defer></script><script src="/gmap-vue/assets/js/69.8733891d.js" defer></script><script src="/gmap-vue/assets/js/14.dc893e85.js" defer></script><script src="/gmap-vue/assets/js/35.ace4dc4d.js" defer></script>
+  </body>
+</html>
