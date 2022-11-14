@@ -1,10 +1,7 @@
 <template>
   <div>
     <!-- @slot Used to set your drawing manager -->
-    <slot
-      :set-drawing-mode="setDrawingMode"
-      :delete-selection="deleteSelection"
-    />
+    <slot :setDrawingMode="setDrawingMode" :deleteSelection="deleteSelection" />
   </div>
 </template>
 
@@ -18,7 +15,6 @@ import { bindProps, getPropsValues } from '../utils/helpers';
  * @displayName GmapDrawingManager
  * @see [source code](/guide/drawing-manager.html#source-code)
  * @see [Official documentation](https://developers.google.com/maps/documentation/javascript/drawinglayer)
- * @see [Official reference](https://developers.google.com/maps/documentation/javascript/reference/drawing)
  */
 export default {
   name: 'DrawingManager',
@@ -74,7 +70,7 @@ export default {
 
         this.$map.addListener('click', this.clearSelection);
 
-        if (this && this.finalShapes && this.finalShapes.length) {
+        if (this?.finalShapes?.length) {
           this.drawAll();
         }
 
@@ -294,7 +290,7 @@ export default {
       google.maps.event.addListener(shape.overlay, 'click', () => {
         self.setSelection(shape);
       });
-      google.maps.event.addListener(shape.overlay, 'click', () => {
+      google.maps.event.addListener(shape.overlay, 'dragend', () => {
         this.$emit('update:shapes', [...this.finalShapes]);
       });
       google.maps.event.addListener(shape.overlay, 'rightclick', () => {
