@@ -70,7 +70,7 @@ export default {
 
         this.$map.addListener('click', this.clearSelection);
 
-        if (this?.finalShapes?.length) {
+        if (this && this.finalShapes && this.finalShapes.length) {
           this.drawAll();
         }
 
@@ -289,6 +289,9 @@ export default {
       const self = this;
       google.maps.event.addListener(shape.overlay, 'click', () => {
         self.setSelection(shape);
+      });
+      google.maps.event.addListener(shape.overlay, 'click', () => {
+        this.$emit('update:shapes', [...this.finalShapes]);
       });
       google.maps.event.addListener(shape.overlay, 'rightclick', () => {
         self.deleteSelection();
