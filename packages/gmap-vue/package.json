@@ -17,6 +17,7 @@
     "lint-staged": "lint-staged",
     "gen:api:docs": "rimraf ../documentation/docs/code && npx vuepress-jsdoc -d ../documentation/docs -t \"GmapVue API\" -r ./README.md",
     "release": "semantic-release"
+    "install": "yarn add rimraf && yarn clean"
   },
   "files": [
     "dist"
